@@ -19,7 +19,7 @@ const pizzip_1 = __importDefault(require("pizzip"));
 const docxtemplater_1 = __importDefault(require("docxtemplater"));
 const createContractDoc = (data) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const templatePath = path_1.default.join(__dirname, "../template/example.docx");
+        const templatePath = path_1.default.join(__dirname, "../../template/example.docx");
         if (!fs_1.default.existsSync(templatePath)) {
             throw new Error(`Template file not found at path: ${templatePath}`);
         }

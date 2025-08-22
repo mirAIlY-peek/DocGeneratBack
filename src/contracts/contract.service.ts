@@ -5,7 +5,7 @@ import Docxtemplater from "docxtemplater";
 
 export const createContractDoc = async (data: Record<string, any>): Promise<Buffer> => {
     try {
-        const templatePath = path.join(__dirname, "../template/example.docx");
+        const templatePath = path.join(__dirname, "template/example.docx");
 
         if (!fs.existsSync(templatePath)) {
             throw new Error(`Template file not found at path: ${templatePath}`);
